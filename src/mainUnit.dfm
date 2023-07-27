@@ -53,8 +53,9 @@ object Form1: TForm1
   object matchPlayerX: TLabel
     Left = 480
     Top = 98
-    Width = 6
+    Width = 17
     Height = 37
+    Caption = '0'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -30
@@ -65,8 +66,9 @@ object Form1: TForm1
   object matchPlayerO: TLabel
     Left = 480
     Top = 149
-    Width = 6
+    Width = 17
     Height = 37
+    Caption = '0'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -30
@@ -82,6 +84,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 0
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 103
@@ -91,6 +94,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 1
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 190
@@ -100,6 +104,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 2
+    OnClick = Button3Click
   end
   object Button4: TButton
     Left = 16
@@ -109,6 +114,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 3
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 103
@@ -118,6 +124,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 4
+    OnClick = Button5Click
   end
   object Button6: TButton
     Left = 190
@@ -127,6 +134,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 5
+    OnClick = Button6Click
   end
   object Button7: TButton
     Left = 16
@@ -136,6 +144,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 6
+    OnClick = Button7Click
   end
   object Button8: TButton
     Left = 103
@@ -145,6 +154,7 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 7
+    OnClick = Button8Click
   end
   object Button9: TButton
     Left = 190
@@ -154,8 +164,9 @@ object Form1: TForm1
     Caption = ' '
     Enabled = False
     TabOrder = 8
+    OnClick = Button9Click
   end
-  object Button10: TButton
+  object bttnNewGame: TButton
     Left = 359
     Top = 296
     Width = 232
@@ -168,8 +179,9 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 9
+    OnClick = bttnNewGameClick
   end
-  object Button11: TButton
+  object bttnReset: TButton
     Left = 359
     Top = 359
     Width = 109
@@ -182,9 +194,10 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 10
+    OnClick = bttnResetClick
   end
-  object Button12: TButton
-    Left = 474
+  object bttnExit: TButton
+    Left = 482
     Top = 359
     Width = 109
     Height = 57
@@ -196,6 +209,6 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 11
-    OnClick = Button12Click
+    OnClick = bttnExitClick
   end
 end
